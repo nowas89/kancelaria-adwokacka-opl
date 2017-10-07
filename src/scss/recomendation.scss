@@ -1,0 +1,84 @@
+@import "variables.scss";
+// recomendation
+.recomendation {
+    min-height: 400px;
+    background-image: url("../img/bg-slider1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .recomendation-header {
+        font-size: 26px;
+        font-family: $roboto;
+        font-weight: $thin;
+        &:after {
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 170px;
+            background-color: #ae9c80;
+            left: 50%;
+            top: 80%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .recomendation-slider {
+        .recomendation-slider__main {
+            position: relative;
+            &:before {
+                position: absolute;
+                left: -100px;
+                top: -20px;
+                display: block;
+                content: ' ';
+                background-image: url('../img/quotes 1.png');
+                background-repeat: no-repeat;
+                background-size: center center;
+                height: 54px;
+                width: 75px;
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
+            &:after {
+                position: absolute;
+                right: -100px;
+                bottom: -20px;
+                display: block;
+                content: ' ';
+                background-image: url('../img/quotes 1.png');
+                transform: rotate(180deg);
+                background-repeat: no-repeat;
+                height: 54px;
+                width: 75px;
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
+            h3 {
+                font-size: 17px;
+                font-weight: $thin;
+                font-family: $lato;
+            }
+            h5 {
+                color: #e7e7e7;
+                font-size: 14px;
+                font-weight: $thin;
+                font-family: $openSans;
+                letter-spacing: 1px;
+                line-height: 150%;
+            }
+        }
+    }
+    .btn-outline-recomendation {
+        color: white;
+        background-color: transparent;
+        background-image: none;
+        border: 2px $green solid;
+        transition: 0.1s linear;
+        font-weight: $thin;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 17.85px 3.15px rgba(35, 31, 32, 0.16);
+        }
+    }
+}

@@ -1,0 +1,91 @@
+@import "variables.scss";
+.services {
+    .container {
+        background-color: #f0efef;
+        margin-top: 80px;
+        padding-top: 20px;
+        margin-bottom: 100px;
+        .services-header {
+            h3 {
+                width: 100px;
+                color: $primary;
+                text-transform: uppercase;
+                border-bottom: 1px solid #ae9c80;
+                font-weight: $thin;
+            }
+        }
+        .services-box {
+            transition: 1s;
+            img {
+                transition: 1s;
+                height: 100%;
+                width: 100%;
+            }
+            a {
+                text-decoration: none;
+            }
+            .services-container {
+                position: relative;
+                height: 250px;
+                width: 250px;
+                overflow: hidden;
+                transition: 1s;
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0px 0px 17.85px 3.15px rgba(35, 31, 32, 0.3);
+                    img {
+                        transition: 1s;
+                        transform: rotate(7deg) scale(1.2);
+                        overflow: hidden;
+                    }
+                    .services-box__content {
+                        visibility: visible;
+                        background: $primary;
+                        opacity: 0.7;
+                        transition: 1s;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        .btn-outline-myown {
+                            transform: scale(0.9);
+                            transition: 0.2s;
+                        }
+                        h5 {
+                            transition: 0.2s;
+                            margin: 20px 10px 0 10px;
+                        }
+                    }
+                }
+            }
+            .services-box__content {
+                visibility: hidden;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                transition: 1.3s;
+                .btn-outline-myown {
+                    margin-top: 20px;
+                    color: white;
+                    background-color: transparent;
+                    background-image: none;
+                    border-color: white;
+                    text-transform: uppercase;
+                    &:hover {
+                        background-color: white;
+                        color: $primary;
+                        outline: 0;
+                        // box-shadow: 0px 0px 17.85px 3.15px rgba(35, 31, 32, 0.16);
+                    }
+                }
+                h5 {
+                    text-transform: uppercase;
+                    padding-top: 20%;
+                }
+            }
+        }
+    }
+}

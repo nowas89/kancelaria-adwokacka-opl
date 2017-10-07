@@ -1,0 +1,157 @@
+@import "variables.scss";
+.footer {
+    min-height: 606px;
+    background-image: url('../img/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    .footer-img {
+        width: 360px;
+        height: 69px;
+    }
+    h5 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: $thin;
+        font-family: $openSans;
+    }
+    h3 {
+        letter-spacing: 1.2px;
+        opacity: 0.8;
+        font-weight: $thin;
+        font-family: $openSans;
+    }
+    // login form
+    .login__form {
+        // background: transparent;
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        border-radius: 5px;
+    }
+    .login__form .login__main {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .login__form .login__main .login__group {
+        position: relative;
+    }
+    .login__form .login__main .login__group .login__input {
+        margin-top: 50px;
+        padding: 10px 10px 10px 5px;
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        width: 100%;
+        font-size: 16px;
+        display: block;
+        border: none;
+        border-bottom: 1px solid #d0dce7;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: transparent;
+    }
+    .login__form .login__main .login__group .login__input:focus {
+        outline: none;
+    }
+    .login__form .login__main .login__group .login__input:focus~label,
+    .login__form .login__main .login__group .login__input:valid~label {
+        top: -20px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .login__form .login__main .login__group .login__label {
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        -webkit-transition: .2s ease all;
+        transition: .2s ease all;
+    }
+    .login__form .login__main .login__terms {
+        font-size: 14px;
+        color: #a8b8c4;
+        margin: 40px auto;
+        line-height: 19px;
+    }
+    .login__form .login__main .login__terms a {
+        text-decoration: none;
+        color: #007ee5;
+    }
+    .login__form .login__button {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 100%;
+        background: #007ee5;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        height: 45px;
+        font-size: 14px;
+        bottom: 0;
+        position: absolute;
+    }
+    .login__button:hover {
+        cursor: pointer;
+    }
+    .login__bar {
+        position: relative;
+        display: block;
+    }
+    .login__bar:before,
+    .login__bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #007ee5;
+        transition: .2s ease all;
+        -moz-transition: .2s ease all;
+        -webkit-transition: .2s ease all;
+    }
+    .login__bar:before {
+        left: 50%;
+    }
+    .login__bar:after {
+        right: 50%;
+    }
+    input:focus~.login__bar:before,
+    input:focus~.login__bar:after {
+        width: 50%;
+    }
+    .btn-outline {
+        color: white;
+        background-color: transparent;
+        background-image: none;
+        border-color: white;
+    }
+    .btn-outline:hover {
+        color: #000;
+        background-color: white;
+        border-color: black;
+        transform: scale(1.1);
+        font-weight: $bold;
+    }
+}
+
+.copyright {
+    min-height: 60px;
+    background-color: $primary;
+    h4 {
+        color: white;
+        font-size: 0.7rem;
+        font-weight: $thin;
+        opacity: 0.3;
+    }
+    a {
+        i {
+            color: white;
+        }
+    }
+}

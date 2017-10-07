@@ -1,0 +1,25 @@
+  @import "variables.scss";
+  .client-logos {
+      height: 260px;
+      background-color: #f0f1f2;
+      h5 {
+          font-size: 1.2rem;
+          color: $primary;
+          margin-bottom: 10px;
+          opacity: 0.9;
+          &:after {
+              position: absolute;
+              content: '';
+              height: 2px;
+              width: 150px;
+              background-color: #ae9c80;
+              left: 50%;
+              top: 90%;
+              transform: translate(-50%, -50%);
+          }
+      }
+      .slide {
+          height: 130px;
+          width: 192px;
+      }
+  }

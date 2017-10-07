@@ -1,0 +1,175 @@
+@import "variables.scss";
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    .nav-item {
+        margin-right: 50px;
+        @include media-breakpoint-down(sm) {
+            margin-left: 50px;
+        }
+        @include media-breakpoint-down(lg) {
+            margin-left: 5px;
+            margin-right: 10px;
+            margin-top: 20px;
+        }
+        // underline effect
+        .effect-underline:after {
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+            content: '';
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            height: 1em;
+            width: 100%;
+            border-bottom: 1px solid;
+            margin-top: 10px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s,
+            -webkit-transform 0.35s;
+            transition: opacity 0.35s,
+            transform 0.35s;
+            -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+        }
+        .effect-underline:hover:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        .nav-link {
+            @include media-breakpoint-down(lg) {
+                font-size: 14px;
+            }
+            font-weight: $thin;
+            letter-spacing: 2px;
+            text-align: justify;
+            position: relative;
+            &:before {
+                position: absolute;
+                content: "\F111";
+                /* this is your text. You can also use UTF-8 character codes as I do here */
+                font-family: FontAwesome;
+                font-size: 0.5rem;
+                top: 15px;
+                left: -15px;
+                opacity: 1;
+                @include media-breakpoint-down(lg) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .navbar-brand {
+        margin-left: 10%;
+        display: block;
+        img {
+            width: 360px;
+            height: 69px;
+        }
+        @include media-breakpoint-down(lg) {
+            margin: 0;
+            img {
+                width: 274px;
+                height: 52px;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            margin: 0 auto;
+            // display: none;
+        }
+    }
+}
+
+// SECTION HEADER 
+.header {
+    position: relative;
+    background-attachment: fixed;
+    background-image: url('../img/header-lg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    text-transform: uppercase;
+    @include media-breakpoint-down(md) {
+        background-image: url('../img/header-md.png');
+        background-attachment: scroll;
+    }
+    .header-content {
+        margin-top: 30vh;
+        h1 {
+            font-family: $lato;
+            font-weight: $thin;
+            letter-spacing: 2px;
+            text-shadow: 0px 0px 1.52px rgba(35, 31, 32, 0.12);
+            @include media-breakpoint-down(md) {
+                font-size: 2rem;
+            }
+        }
+        h2 {
+            text-shadow: 0px 0px 1.52px rgba(35, 31, 32, 0.12);
+            letter-spacing: 2px;
+            @include media-breakpoint-down(md) {
+                font-size: 1.7rem;
+            }
+        }
+    }
+    .btn-outline-header {
+        color: white;
+        background-color: transparent;
+        background-image: none;
+        border-color: white;
+        transition: 0.1s linear;
+        &:hover {
+            transform: scale(1.1);
+            background-color: white;
+            color: darkgray;
+            outline: 0;
+            // box-shadow: 0px 0px 17.85px 3.15px rgba(35, 31, 32, 0.16);
+        }
+    }
+    .scrollBtn {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -7px;
+        display: flex;
+        justify-content: center;
+        height: 38px;
+        width: 166px;
+        background-image: url('../img/btn-scroll.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        // img {
+        //     margin-top: 10px;
+        // }
+        .header-scroll-arrow {
+            -webkit-animation: sdb05 1.5s infinite;
+            animation: sdb05 1.5s infinite;
+            box-sizing: border-box;
+        }
+    }
+}
+
+@keyframes sdb05 {
+    0% {
+        -webkit-transform: translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0, 18px);
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-default .navbar-collapse {
+        border-color: white;
+        background-color: #e87373;
+    }
+}

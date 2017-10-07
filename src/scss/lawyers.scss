@@ -1,0 +1,188 @@
+@import "variables.scss";
+.lawyers {
+    min-height: 700px;
+    .row {
+        padding-top: 20px;
+        .lawyers__header {
+            position: relative;
+            h3 {
+                color: $primary;
+                font-weight: $thin;
+                font-size: 21px;
+                margin-bottom: 10px;
+                opacity: 0.9;
+                // border-bottom: 2px solid #ae9c80;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    height: 1px;
+                    width: 150px;
+                    background-color: #ae9c80;
+                    left: 50%;
+                    top: 90%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        .lawyers__header-content {
+            margin: 30px 0;
+            p {
+                padding: 20px 0;
+                font-weight: $thin;
+            }
+            .btn-outline {
+                color: $primary;
+                background-color: transparent;
+                background-image: none;
+                border-color: grey;
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.3s all ease;
+                }
+            }
+            input {
+                font-weight: $thin;
+                &:hover {
+                    box-shadow: 0px 0px 5px 3.15px rgba(35, 31, 32, 0.1);
+                }
+            }
+            .lawyers-header__restDescription {
+                display: block;
+                p {
+                    padding: 10px 0;
+                    font-weight: $thin;
+                }
+            }
+            .closed {
+                display: none;
+            }
+        }
+        .lawyer-person_first {
+            position: relative;
+            height: 350px;
+            width: 200px;
+            box-shadow: 0px 0px 5px 3.15px rgba(35, 31, 32, 0.1);
+            margin-top: 50px;
+            background-color: #eae8e9;
+            border-radius: 5px;
+            .person-image {
+                &:after {
+                    position: absolute;
+                    content: url('../img/gerard1.png');
+                    height: 300px;
+                    width: 176px;
+                    left: 5px;
+                    top: -20px;
+                }
+            }
+            .lawyer-person__description {
+                position: absolute;
+                bottom: 0;
+                background-color: #ffffff;
+                height: 110px;
+                width: 100%;
+                color: $primary;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                h5 {
+                    color: #6bac48;
+                    font-size: 1rem;
+                }
+                h4 {
+                    font-size: 1.1rem;
+                }
+                .fa-facebook-official {
+                    color: #3b5998;
+                    margin: 5px;
+                    opacity: 0.8;
+                }
+                .fa-linkedin-square {
+                    color: #007bb6;
+                    margin: 5px;
+                    opacity: 0.8;
+                }
+                .fa {
+                    &:hover {
+                        opacity: 1;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .lawyer-person_second {
+            position: relative;
+            height: 350px;
+            width: 200px;
+            box-shadow: 0px 0px 5px 3.15px rgba(35, 31, 32, 0.1);
+            margin-top: 50px;
+            background-color: #eae8e9;
+            border-radius: 5px;
+            .person-image {
+                &:after {
+                    position: absolute;
+                    content: url('../img/przemyslaw.png');
+                    height: 300px;
+                    width: 176px;
+                    left: 1px;
+                    top: -36px;
+                }
+            }
+            .lawyer-person__description {
+                position: absolute;
+                bottom: 0;
+                background-color: #ffffff;
+                height: 110px;
+                width: 100%;
+                color: $primary;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                h5 {
+                    color: #6bac48;
+                    font-size: 1rem;
+                }
+                h4 {
+                    font-size: 1.1rem;
+                }
+                .fa-facebook-official {
+                    color: #3b5998;
+                    margin: 5px;
+                    opacity: 0.8;
+                }
+                .fa-linkedin-square {
+                    color: #007bb6;
+                    margin: 5px;
+                    opacity: 0.8;
+                }
+                .fa {
+                    &:hover {
+                        opacity: 1;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// lawyers collapse efect
+.lawyer-person__second-cv,
+.lawyer-person__first-cv {
+    padding: 30px;
+    color: $primary;
+    display: block;
+    p {
+        padding: 10px 0;
+        font-weight: $thin;
+    }
+    h5 {
+        font-size: 16px;
+        font-weight: $thin;
+    }
+    h4 {
+        font-size: 20px;
+    }
+}
+
+.closed {
+    display: none;
+}

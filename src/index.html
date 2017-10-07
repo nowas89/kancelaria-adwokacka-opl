@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kancelaria Adwokacka NAWOROL DĘBSKI SPÓŁKA PARTNERSKA</title>
+    <meta name="description" content="Kancelaria Adwokacka która świadczy swoje usługi w całej Polsce z siedzibą w Zielonej Górze oraz w Żaganiu. Zapraszamy do kontaktu">
+</head>
+
+<body>
+
+    <!-- section of preLoader -->
+    <div class="loader text-center">
+        <div class="loader-content">
+            <img class="loaderImg" src="img/logo.png" alt="kancelaria adwoacka naworol dębski spółka partnerska">
+            <h5 class="mt-5">Wiele pokoleń, ogrom doświadczenia</h5>
+
+        </div>
+
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    <section id="header" class="header ">
+        <nav id="navBar" class="navbar navbar-expand-md navbar-dark bg-faded ">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="kancelaria adwoacka naworol dębski spółka partnerska" width="330" height="48" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ">
+
+                    <li class="nav-item ">
+                        <a id='navLink' class="nav-link text-white smoothScroll effect-underline" href="#services">USŁUGI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id='navLink' class="nav-link text-white effect-underline smoothScroll" data-toggle="modal" data-target="#myModal">PORADY ONLINE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id='navLink' class="nav-link text-white smoothScroll effect-underline" href="#recomendation">KANCELARIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id='navLink' class="nav-link text-white mr-5 smoothScroll effect-underline" href="#footer">KONTAKT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-content d-flex justify-content-center align-items-center">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="mx-auto">
+                        <h1 class="mt-5">potrzebujesz profesionalnej <b>pomocy</b> prawnej ?</h1>
+                        <h2 class="mt-5">skontaktuj się z nami</h2>
+
+                        <div class="header-modal">
+                            <!-- Button trigger modal   -->
+                            <button type="button" id="modalButton" class="btn btn-lg btn-outline-header mt-5" data-toggle="modal" data-target="#myModal">KONTAKT</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header ">
+                                            <h5 class="modal-title text-muted ml-3" id="exampleModalLabel">Formularz Kontaktowy</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- CONTACT FORM          -->
+                                            <form method="post" id="contactform" name="contactform" class="contact-form" action="mail/contact.php">
+
+                                                <div class="form-group">
+                                                    <label for="email">adres E-mail</label>
+                                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Wpisz adres E-Mail" required>
+                                                    <small id="emailHelp" class="form-text text-muted">Podaj swój adres E-MAIL, to ułatwi nam kontakt.</small>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name">Imię i Nazwisko</label>
+                                                    <input type="name" class="form-control" id="name" name="name" placeholder="Imię i Nazwisko" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="phone">Numer Telefonu</label>
+                                                    <input type="number" id="phone" name="phone" class="form-control" placeholder="Numer Telefonu" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="subject">Example select</label>
+                                                    <select class="form-control" id="subject" name="subject" placeholder="Wybierz Tematykę Problemu">
+
+                                                            <option>Pomoc Prawna</option>
+                                                            <option>Propozycja współpracy</option>
+                                                          
+                                                          </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="comments">Example textarea</label>
+                                                    <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
+                                                </div>
+
+
+                                                <div class="modal-footer">
+
+                                                    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                                                    <input id="submit" name="submit" type="submit" class="btn btn-primary pull-right" value="Wyślij">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scrollBtn ">
+                <a href="#services" class="smoothScroll"><img class="header-scroll-arrow" src="img/scroll-arrow.png" alt=" "></a>
+            </div>
+        </div>
+    </section>
+    <!-- services section -->
+    <section class="services " id="services">
+        <div class="container ">
+            <div class="row pb-5">
+                <div class="services-header pb-3 col-md-12 d-flex justify-content-center ">
+                    <h3 class="py-2 ">usługi</h3>
+                </div>
+                <div class="services-box gospodarka col-md-6 col-lg-4 p-3" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="services-container mx-auto ">
+                        <img src="img/gospodarka.png " alt="SPRAWY GOSPODARCZE ">
+                        <div class="services-box__content text-center">
+                            <h5>sprawy gospodarcze</h5>
+                            <a href="/services.html#our-services_gospodarcze"> <button type="button" class="btn btn-outline-myown mt-5 hidden">
+                                         czytaj więcej
+                                      </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-box spory col-md-6 col-lg-4 p-3 text-center" data-aos="zoom-in" data-aos-duration="2100" data-aos-delay="50">
+                    <div class="services-container mx-auto ">
+                        <img src="img/spory.png " alt="PROWADZENIE POSTĘPOWAŃ SPORNYCH">
+                        <div class="services-box__content text-center">
+                            <h5>prowadzenie postępowań spornych</h5>
+                            <a href="/services.html#our-services_sporne"> <button type="button" class="btn btn-outline-myown mt-5 hidden">
+                                    czytaj więcej
+                                 </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-box inwestycje col-md-6 col-lg-4 text-center p-3" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="services-container mx-auto ">
+                        <img src="img/inwestycje.png " alt="PROJEKTY INWESTYCYJNE ">
+                        <div class="services-box__content text-center">
+                            <h5>projekty inwestycyjne</h5>
+
+                            <a href="/services.html#our-services_projekty"> <button type="button" class="btn btn-outline-myown mt-5 hidden">
+                                    czytaj więcej
+                                 </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-box transgraniczne col-md-6 col-lg-4 text-center p-3" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="services-container mx-auto ">
+                        <img src="img/transgraniczne.png " alt="SPRAWY TRANSGRANICZNE ">
+                        <div class="services-box__content text-center">
+                            <h5>sprawy transgraniczne</h5>
+                            <a href="/services.html#our-services_transgraniczne"> <button type="button" class="btn btn-outline-myown mt-5 hidden">
+                                    czytaj więcej
+                                 </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-box windykacja col-md-6 col-lg-4 text-center p-3 " data-aos="zoom-in" data-aos-delay="100">
+                    <div class=" services-container mx-auto ">
+                        <img src="img/windykacja.png " alt="WINDYKACJA">
+                        <div class="services-box__content text-center ">
+                            <h5>windykacja</h5>
+                            <a href="/services.html#our-services_windykacja"> <button type="button" class="btn btn-outline-myown mt-5 hidden">
+                                    czytaj więcej
+                                 </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-box odszkodowania col-md-6 col-lg-4 text-center p-3 " data-aos="zoom-in" data-aos-delay="50">
+                    <div class="services-container mx-auto ">
+                        <img src="img/odszkodowania.png " alt=" ODSZKODOWANIA">
+                        <div class="services-box__content text-center ">
+                            <h5>odszkodowania</h5>
+                            <a href="/services.html#our-services_odszkodowania"> <button type="button" class="btn btn-outline-myown mt-5 hidden">
+                                    czytaj więcej
+                                 </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-box praca col-md-6 col-lg-4 text-center p-3 " data-aos="zoom-in" data-aos-delay="50">
+                    <div class="services-container mx-auto ">
+                        <img src="img/praca.png " alt="PRAWO PRACY">
+                        <div class="services-box__content text-center ">
+                            <h5>prawo pracy</h5>
+                            <a href="/services.html#our-services_praca"> <button type="button" class="btn btn-outline-myown mt-5 hidden">
+                                    czytaj więcej
+                                 </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-box spolki col-md-6 col-lg-4 text-center p-3 " data-aos="zoom-in" data-aos-delay="50">
+                    <div class="services-container mx-auto ">
+                        <img src="img/spolki.png " alt="Spółki">
+                        <div class="services-box__content text-center ">
+                            <h5>spółki</h5>
+                            <a href="/services.html#our-services_spolki"> <button type="button" class="btn btn-outline-myown mt-5 hidden">
+                                    czytaj więcej
+                                 </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-box more col-md-6 col-lg-4 text-center p-3 " data-aos="zoom-in" data-aos-delay="50">
+                    <div class="services-container mx-auto ">
+                        <img src="img/more.png" alt=" ">
+                        <div class="services-box__content text-center ">
+                            <h5>potrzebujesz więcej informacji?, skontaktuj się z nami</h5>
+                            <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-outline-myown mt-5 hidden ">
+                                    czytaj więcej
+                                  </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- references section -->
+    <section class="recomendation" id="recomendation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 recomendation-heading text-center">
+                    <h3 class="recomendation-header p-3">Rekomendacje</h3>
+                </div>
+                <div class="recomendation-slider col-md-12 mt-3">
+                    <div class="recomendation-slider__main col-md-8 mx-auto" data-aos="fade-down" data-aos-delay="600">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img class="d-block img-fluid" src=" " alt=" ">
+                                    <h3>KGHM</h3>
+                                    <h5 class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse voluptatem accusantium doloremque laudantium</h5>
+                                    <h3 class="d-flex justify-content-end p-3">PREZES JAN NOWAK</h3>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid" src=" " alt=" ">
+                                    <h3>#2</h3>
+                                    <h5 class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse voluptatem accusantium doloremque laudantium</h5>
+                                    <h3 class="d-flex justify-content-end p-3">PREZES JAN NOWAK</h3>
+                                </div>
+                                <div class="carousel-item ">
+                                    <img class="d-block img-fluid" src=" " alt=" ">
+                                    <h3>KGHM #3</h3>
+                                    <h5 class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse voluptatem accusantium doloremque laudantium</h5>
+                                    <h3 class="d-flex justify-content-end p-3">PREZES JAN NOWAK</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 recomendation-button text-center p-3 ">
+                    <button class="btn btn-outline-recomendation" data-aos="fade-down" data-aos-delay="100">PLIK PDF</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section ours lawyers -->
+    <section class="lawyers " id="lawyers ">
+        <div class="container">
+            <div class="row text-center ">
+                <div class="col-md-12 lawyers__header-content py-4">
+                    <div class="lawyers__header p-1">
+                        <h3>Nasza <b> Kancelaria</b></h3>
+                    </div>
+                    <p>Niniejsza Kancelaria została założona przez adwokatów Gerarda Dębskiego i Przemysława Naworol, którzy przez wiele lat współpracowali z Kancelarią Adwokatów i Radców Prawnych Ślązak Zapiór i Wspólnicy Spółka komandytowa z siedzibą w
+                        Katowicach, ten pierwszy jako jej wspólnik, zaś ten drugi jako starszy prawnik, gdzie zdobyli bogate doświadczenie w zakresie obsługi dużych i skomplikowanych projektów inwestycyjnych oraz przedsiębiorców.</p>
+
+                    <div class="lawyers-header__restDescription closed">
+                        <p>Kancelaria specjalizuje się w obsłudze przedsiębiorstw oraz jednostek samorządów terytorialnych. W swojej obsłudze posiada szereg przedsiębiorców, prowadzących swoją działalność gospodarczą w różnych formach prawnych, w tym w formie
+                            spółki akcyjnej, jak również prowadzi bieżącą obsługę prawną jednostek samorządów terytorialnych oraz spółek komunalnych. Zatem gwarantuje najwyższą jakość swoich usług, gdyż łączy w sobie doświadczenie z wiedzą specjalistyczną.</p>
+                        <p>Dodatkowo posiada niezbędne doświadczenie w realizacji projektów inwestycyjnych, gdyż jej wspólnicy z powodzeniem przeprowadzili szereg postępowań związanych z zamówieniami publicznymi czy też partnerstwem publiczno – prywatnych.
+                            Efekt ich prac można sprawdzić m.in. w Mieście Oława, gdzie został wybudowanych budynek socjalny oraz droga w formule partnerstwa publiczno – prywatnego.</p>
+                        <p>Kancelaria współpracuje z wieloma prawnikami zagranicznymi, tak aby w przypadku jakichkolwiek sporów transgranicznych zagwarantować jej klientom fachową pomoc prawną zarówno w Polsce jak i za granicą. Współpracuje również z doradcami
+                            z dziedziny ekonomii oraz prawa podatkowego, dzięki czemu oferuje swoim klientom kompleksową pomoc nie tylko z dziedziny prawa.</p>
+                        <p>Kancelaria składa się z zespołu, który łączy w sobie wiedzę oraz doświadczenie, które było zdobywane w jednej z najlepszych polskich kancelarii prawnych. Co też gwarantuje jakość usług na najwyższym poziomie.</p>
+                    </div>
+                    <input type="button" id="loadMore" class="btn btn-outline" value="Czytaj Więcej">
+
+                </div>
+                <div class="col-md-12 lawyers__header">
+                    <h3>Nasi <b> Adwokaci</b></h3>
+                </div>
+                <!-- <div class=" col-md-12 d-flex flex-row "> -->
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center my-5 ">
+                    <div class="lawyer-person_first lawyer-person__first">
+                        <div class="person-image "></div>
+                        <div class="lawyer-person__description ">
+
+                            <h5 class="mt-3 ">Adwokat</h5>
+                            <h4>Gerard Dębski</h4>
+                            <i class="fa fa-facebook-official " aria-hidden="true "></i>
+                            <i class="fa fa-linkedin-square " aria-hidden="true "></i>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center my-5 ">
+                    <div class="lawyer-person_second lawyer-person__second">
+                        <div class="person-image "></div>
+
+                        <div class="lawyer-person__description ">
+                            <h5 class="mt-3 ">Adwokat</h5>
+                            <h4>Przemysław Naworol</h4>
+                            <a href="# "> <i class="fa fa-facebook-official " aria-hidden="true "></i></a>
+                            <a href="# "> <i class="fa fa-linkedin-square " aria-hidden="true "></i></a>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <div class="col-md-12">
+                    <div class="lawyer-person__first-cv text-left closed">
+                        <h4>GERARD DĘBSKI</h4>
+                        <h5>ADWOKAT, WSPÓLNIK</h5>
+                        <h5>Mail: gdebski@ndsp.pl</h5>
+                        <h5>Tel.: 601 - 710 - 586 </h5>
+                        <p> Adwokat Gerard Dębski jest absolwentem Wydziału Prawa i Administracji Uniwersytetu Śląskiego w Katowicach. Odbył aplikację sędziowską i w 1983 r. zdał egzamin sędziowski. W latach od 1983 do 1986 pełnił funkcję sędziego w Sądzie
+                            Rejonowym w Lublińcu. </p>
+                        <p>Od 1986 r. wykonywał zawód radcy prawnego. W 2006 r. został wpisany uchwałą Okręgowej Rady Adwokackiej w Zielonej Górze na listę adwokatów pod numerem ZIG/Adw/229.</p>
+                        <p>W latach od 2007 do 2017 był wspólnikiem w Kancelarii Adwokatów i Radców Prawnych Ślązak Zapiór i Wspólnicy Spółka komandytowa z siedzibą w Katowicach. Jednocześnie w tym okresie wykonywał samodzielnie zawód adwokata w Zielonej
+                            Górze.
+                        </p>
+                        <p>Specjalizuje się w prawie cywilnym, gospodarczym oraz w realizacji projektów inwestycyjnych, w tym projektów partnerstwa publiczno – prywatnego. Z tego zakresu przeprowadził na terenie Polski w latach 2010 – 2016 kilkadziesiąt
+                            szkoleń i wykładów dla jednostek samorządu terytorialnego.</p>
+                        <p>Włada w mowie i piśmie językiem niemieckim.</p>
+                    </div>
+
+                    <div class="lawyer-person__second-cv text-left closed">
+                        <h4>PRZEMYSŁAW NAWOROL</h4>
+                        <h5>ADWOKAT, WSPÓLNIK</h5>
+                        <h5>Mail: pnaworol@ndsp.pl</h5>
+                        <h5>Tel.: 601 - 783 - 728 </h5>
+                        <p> Absolwent Wydziału Prawa Administracji i Ekonomii Uniwersytetu Wrocławskiego. W okresie od 2011 r. do 2014 r. odbył aplikację adwokacką, zaś w 2015 r. został wpisany uchwałą Okręgowej Rady Adwokackiej w Zielonej Górze na listę
+                            adwokatów pod numerem 464. </p>
+                        <p>W okresie od kwietnia 2010 r. do maja 2017 r. współpracował z Kancelarią Adwokatów i Radców Prawnych Ślązak Zapiór i Wspólnicy Spółka komandytowa z siedzibą w Katowicach. Był również w okresie od 2011 r. do 2017 r. redaktorem naczelnym
+                            Samorządowego Serwisu Prawnego, gdzie również regularnie publikował swoje artykuły dotyczące problematyki administracyjnej oraz zamówień publicznych. Autor szeregu szkoleń dotyczących tematyki prawa cywilnego, gospodarczego
+                            oraz zamówień publicznych.</p>
+                        <p>Specjalizuje się w prawie cywilnym, gospodarczym, prawie pracy, zamówień publicznych oraz administracji publicznej. </p>
+                        <p>Włada biegle językiem angielskim oraz niemieckim.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- section of logos carousel -->
+    <section class="client-logos " id="client-logos ">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-md-12 client-logos__header text-center pt-3 ">
+                    <h5>Nasi <b>PARTNERZY</b></h5>
+                </div>
+                <div class="customer-logos owl-carousel col-md-10 pt-3 mx-auto ">
+                    <!-- <div class="slide "><img src="https://www.solodev.com/assets/carousel/image1.png "></div>
+                    <div class="slide "><img src="https://www.solodev.com/assets/carousel/image2.png "></div>
+                    <div class="slide "><img src="https://www.solodev.com/assets/carousel/image3.png "></div>
+                    <div class="slide "><img src="https://www.solodev.com/assets/carousel/image4.png "></div>
+                    <div class="slide "><img src="https://www.solodev.com/assets/carousel/image5.png "></div>
+                    <div class="slide "><img src="https://www.solodev.com/assets/carousel/image6.png "></div>
+                    <div class="slide "><img src="https://www.solodev.com/assets/carousel/image7.png "></div>
+                    <div class="slide "><img src="https://www.solodev.com/assets/carousel/image8.png "></div> -->
+                    <div class="slide "><img src="img/partnerzy/1.png"></div>
+                    <div class="slide "><img src="img/partnerzy/2.png"></div>
+                    <div class="slide "><img src="img/partnerzy/3.png"></div>
+                    <div class="slide "><img src="img/partnerzy/4.png"></div>
+                    <div class="slide "><img src="img/partnerzy/51.png"></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- google map section -->
+    <section class="googleMap ">
+        <div id="map">
+        </div>
+    </section>
+    <!-- footer section -->
+
+    <footer class="footer" id="footer">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-4 col-md-12 footer-discription__1 text-center ">
+                    <img src="img/location icon.png " alt=" ">
+                    <h5>ul. Jedności 24/2</h5>
+                    <h5>Zielona Góra, 65-018 </h5>
+                </div>
+                <div class="col-lg-4 col-md-12 footer-discription__2 text-center ">
+                    <img src="img/telephone.png " alt=" ">
+                    <h5>601 - 710 - 586</h5>
+                    <h5>601 - 783 - 738</h5>
+                </div>
+                <div class="col-lg-4 col-md-12 footer-discription__3 text-center ">
+                    <img src="img/email icon.png " alt=" ">
+                    <h5>kontakt@ndsp.pl</h5>
+                </div>
+                <div class="footer-heading col-md-12 text-center pt-5 ">
+                    <img class="footer-img" src="img/logo.png " alt=" ">
+                    <h3 class="mt-5 ">Wiele pokoleń, ogrom doświadczenia</h3>
+                    <form class="login__form " method="POST" name="frm_login " action="mail/mail.php">
+
+                        <main class="login__main">
+                            <div class="login__group">
+                                <input class="login__input" id="email_one" type="email" name="email_one" required>
+                                <label class="login__label" name="email_one">Email</label>
+                                <div class="login__bar"></div>
+                            </div>
+                            <input type="submit" class="btn btn-outline mt-5 " name="submit" value="wyślij">
+                        </main>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </footer>
+    <section class="copyright ">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-md-4 text-center mt-4 ">
+                    <h4> ndsp.pl © 2017 Wszystkie prawa zastrzezone</h4>
+                </div>
+                <div class="col-md-4 text-center mt-4 ">
+                    <a href="# "><i class="fa fa-twitter mx-3 " aria-hidden="true "></i></a>
+                    <a href="# "> <i class="fa fa-facebook mx-3 " aria-hidden="true "> </i></a>
+
+                </div>
+                <div class="col-md-4 text-center mt-4 ">
+                    <h4>projekt i wykonanie madcoding.pl</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- scroll up button -->
+    <a href="#" class="scrollToTop">
+    </a>
+    <script src="js/jquery.min.js "></script>
+    <script src="js/aos.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="js/main.js "></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8ZLPiY8m1rzCmZh0idC_m-9xwaRGbHiM&callback=initMap ">
+    </script>
+
+</body>
+
+</html>
